@@ -34,7 +34,7 @@
     order: 3;
     color: #fff;
 
-    @media (min-width: 769px) {
+    @media (min-width: 860px) {
       display: none;
     }
   }
@@ -46,7 +46,7 @@
     flex-wrap: wrap;
     gap: 0 0.5rem;
 
-    @media (max-width: 768px) {
+    @media (max-width: 859px) {
       flex: 1;
       justify-content: flex-end;
     }
@@ -61,7 +61,7 @@
     padding: 0.5rem 1rem 1rem;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 
-    @media (min-width: 769px) {
+    @media (min-width: 860px) {
       width: auto;
       display: flex;
       flex-direction: row;
@@ -91,7 +91,7 @@
       background: rgba(255, 255, 255, 0.1);
     }
 
-    @media (min-width: 769px) {
+    @media (min-width: 860px) {
       padding: 0.4rem 0.6rem;
       font-size: 0.9rem;
     }
@@ -99,7 +99,7 @@
 
   .lang-switcher {
     flex-shrink: 0;
-    @media (min-width: 769px) {
+    @media (min-width: 860px) {
       order: 3;
     }
   }
@@ -139,14 +139,73 @@
   vertical-align: middle;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 859px) {
+  .app-header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0.75rem 1.25rem 1.5rem;
+  }
+
+  .app-header .brand {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 0.25rem;
+  }
+
+  .app-header .brand__img {
+    object-position: center top;
+  }
+
+  .app-header__hamburger {
+    align-self: center;
+    margin-top: 0.25rem;
+  }
+
+  .app-header__right {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .app-header__nav {
+    width: 100%;
+    margin: 0;
+    padding: 0.5rem 0 0.5rem;
+    box-shadow: none;
+    background: transparent;
+    align-items: center;
+    justify-content: center;
+    order: 2;
+  }
+
+  .app-header__nav-link {
+    text-align: center;
+  }
+
+  .lang-switcher {
+    order: 3;
+  }
+}
+
+@media (min-width: 860px) {
   .app-header {
     padding: 0 1.5rem;
     min-height: 240px;
+    flex-wrap: nowrap;
 
     .brand__img {
       height: 200px;
       max-width: 720px;
+    }
+
+    &__right {
+      flex-wrap: nowrap;
+      justify-content: flex-end;
+      gap: 0.75rem;
     }
   }
 }

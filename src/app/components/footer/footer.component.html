@@ -1,15 +1,15 @@
 <footer id="footer" class="footer">
   <div class="footer__grid">
     <div class="footer__col">
-      <h3 class="footer__title">{{ currentLang === 'bg' ? footerAboutTitleBg : footerAboutTitleEn }}</h3>
-      <p class="footer__text">{{ currentLang === 'bg' ? footerAboutTextBg : footerAboutTextEn }}</p>
+      <h3 class="footer__title">{{ 'FOOTER_ABOUT_TITLE' | translate }}</h3>
+      <p class="footer__text">{{ 'FOOTER_ABOUT_TEXT' | translate }}</p>
     </div>
     <div class="footer__col">
-      <h3 class="footer__title">{{ currentLang === 'bg' ? footerContactsTitleBg : footerContactsTitleEn }}</h3>
+      <h3 class="footer__title">{{ 'FOOTER_CONTACTS_TITLE' | translate }}</h3>
       <p class="footer__text">
-        {{ currentLang === 'bg' ? footerPhoneLine : footerPhoneLineEn }}<br>
-        {{ currentLang === 'bg' ? footerEmailLine : footerEmailLineEn }}<br>
-        {{ currentLang === 'bg' ? footerWebsiteLine : footerWebsiteLineEn }}
+        {{ 'FOOTER_PHONE_LINE' | translate }}<br />
+        {{ 'FOOTER_EMAIL_LINE' | translate }}<br />
+        {{ 'FOOTER_WEBSITE_LINE' | translate }}
       </p>
     </div>
   </div>

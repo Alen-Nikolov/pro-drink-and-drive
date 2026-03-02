@@ -1,18 +1,10 @@
 <section id="call-section" class="call-section">
-  <h1 class="call-section__title">ПРО ДРИНК ЕНД ДРАЙВ</h1>
+  <h1 class="call-section__title">{{ 'APP_TITLE' | translate }}</h1>
   <a mat-raised-button color="primary" class="call-section__btn" [href]="'tel:' + phoneNumber()">
     <mat-icon class="call-section__icon">phone</mat-icon>
-    @if (currentLang === 'bg') {
-      {{ callBtnBg }}
-    } @else {
-      {{ callBtnEn }}
-    }
+    {{ 'CTA_CALL' | translate }}
   </a>
   <p class="call-section__text">
-    @if (currentLang === 'bg') {
-      {{ callTextBg }}
-    } @else {
-      {{ callTextEn }}
-    }
+    {{ 'CALL_SECTION_TEXT' | translate }}
   </p>
 </section>

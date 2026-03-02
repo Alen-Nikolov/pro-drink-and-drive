@@ -13,5 +13,15 @@
   "FOOTER_EMAIL_LINE": "Email: pro-drink-and-drive@gmail.com",
   "FOOTER_WEBSITE_LINE": "Website: prodrinkanddrive.bg",
   "LANG_BG": "Български",
-  "LANG_EN": "English"
+  "LANG_EN": "English",
+  "PRICES_SOFIA": "Prices Sofia",
+  "PRICE_PER_KM": "Price per km",
+  "MIN_JOURNEY_KM": "Minimum journey",
+  "MIN_JOURNEY_NOTE": "up to 5 km included",
+  "WORKING_HOURS": "Working hours",
+  "EVERY_DAY": "every day",
+  "CALL_FEE": "Call fee",
+  "OUR_DRIVERS": "Our drivers",
+  "OUR_DRIVERS_DESCRIPTION": "Our drivers are experienced and professional. They are trained to drive safely and responsibly. We work 24/7 to get you to your destination quickly and stress-free.",
+  "OUR_DRIVERS_WE_UNDERSTAND":"We understand how important it is to be safe on the road - that's why we always use safe routes and maintain our vehicles in excellent condition."
 }

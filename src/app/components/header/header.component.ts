@@ -24,11 +24,11 @@ export class HeaderComponent {
   mobileMenuOpen = false;
   currentLang = 'bg';
   readonly navLinks = [
-    { fragment: 'call-section', labelBg: 'Обадете се', labelEn: 'Call' },
-    { fragment: 'phone-section', labelBg: 'Телефон', labelEn: 'Phone' },
-    { fragment: 'pricing', labelBg: 'Цени', labelEn: 'Pricing' },
-    { fragment: 'social-section', labelBg: 'Социални мрежи', labelEn: 'Social' },
-    { fragment: 'footer', labelBg: 'За нас', labelEn: 'About us' },
+    { fragment: 'call-section', labelKey: 'NAV_CALL' },
+    { fragment: 'phone-section', labelKey: 'NAV_PHONE' },
+    { fragment: 'pricing', labelKey: 'PRICES_SOFIA' },
+    { fragment: 'social-section', labelKey: 'NAV_SOCIAL' },
+    { fragment: 'footer', labelKey: 'NAV_ABOUT' },
   ] as const;
   readonly languages = [
     { code: 'bg', icon: '/assets/icons/bulgaria.png', tooltip: 'Bulgaria' },
@@ -36,8 +36,7 @@ export class HeaderComponent {
   ] as const;
 
   constructor(private translate: TranslateService) {
-    translate.setDefaultLang('bg');
-    translate.use('bg');
+    this.currentLang = this.translate.currentLang || 'bg';
     this.translate.onLangChange.subscribe((e) => (this.currentLang = e.lang));
   }
 
