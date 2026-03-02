@@ -1,0 +1,26 @@
+.phone-section {
+  padding: 4rem 1rem 5rem;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.7);
+  border-top: 3px solid rgba(255, 255, 255, 0.3);
+
+  &__number {
+    display: block;
+    font-size: clamp(3rem, 14vw, 5.5rem);
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    text-decoration: none;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8), 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+}
+
+@media (min-width: 768px) {
+  .phone-section {
+    padding: 5rem 1.5rem 6rem;
+
+    &__number {
+      font-size: clamp(4.5rem, 12vw, 7rem);
+    }
+  }
+}

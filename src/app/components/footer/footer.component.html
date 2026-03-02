@@ -1,0 +1,16 @@
+<footer id="footer" class="footer">
+  <div class="footer__grid">
+    <div class="footer__col">
+      <h3 class="footer__title">{{ currentLang === 'bg' ? footerAboutTitleBg : footerAboutTitleEn }}</h3>
+      <p class="footer__text">{{ currentLang === 'bg' ? footerAboutTextBg : footerAboutTextEn }}</p>
+    </div>
+    <div class="footer__col">
+      <h3 class="footer__title">{{ currentLang === 'bg' ? footerContactsTitleBg : footerContactsTitleEn }}</h3>
+      <p class="footer__text">
+        {{ currentLang === 'bg' ? footerPhoneLine : footerPhoneLineEn }}<br>
+        {{ currentLang === 'bg' ? footerEmailLine : footerEmailLineEn }}<br>
+        {{ currentLang === 'bg' ? footerWebsiteLine : footerWebsiteLineEn }}
+      </p>
+    </div>
+  </div>
+</footer>
