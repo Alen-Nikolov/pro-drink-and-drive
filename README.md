@@ -25,3 +25,6 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+
+##  DIST FOLDER IS COMMITTED TO GITHUB, ONLY FOR DEMONSTRATION PURPOSES (NEEDED TO DEPLOY IT FOR FREE, BUT THE BUILD PROCESS WAS FAILING DUE TO THE FREE TIER MEMORY USAGE LIMIT) SHOULD BE REMOVED FROM THE REPO
